@@ -1,0 +1,14 @@
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <input
+    [(ngModel)]="label"
+    (keyup.enter)="handleClick()"
+    type="text"
+    id="myInput"
+    placeholder="Title...">
+  <span
+    class="addBtn"
+    (click)="handleClick()">
+    Add
+  </span>
+</div>

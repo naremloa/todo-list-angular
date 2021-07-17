@@ -1,0 +1,9 @@
+<ul id="myUL">
+  <app-item
+    *ngFor="let item of listData.list; let idx = index"
+    [label]="item.label"
+    [checked]="item.checked"
+    (onChecked)="handleChecked($event, idx)"
+    (onClose)="handleClose(idx)">
+  </app-item>
+</ul>

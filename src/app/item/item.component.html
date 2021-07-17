@@ -1,0 +1,10 @@
+<li
+  [class.checked]="checked"
+  (click)="handleClick()">
+  {{ label }}
+  <span
+    class="close"
+    (click)="handleClose($event)">
+    {{'\u00D7'}}
+  </span>
+</li>
